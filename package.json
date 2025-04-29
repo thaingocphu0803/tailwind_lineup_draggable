@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  },
+  "scripts": {
+    "dev:css" : "npx @tailwindcss/cli -i ./lib/tailwindcss/input.css -o ./html/assets/css/output.css --watch",
+"start:live": "live-server --port=3000 --open=./html/index.html"
+  }
+}

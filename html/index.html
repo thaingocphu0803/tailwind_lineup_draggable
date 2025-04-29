@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./assets/image/favicon.webp" type="image/x-icon">
+	<title>wwww.dreamteam.com</title>
+	<!-- jquery-->
+	<link rel="stylesheet" href="../lib/jquery/jquery-ui-1.14.1.custom/jquery-ui.min.css">
+	<script src="../lib/jquery/jquery-3.7.1.min.js"></script>
+	<script src="../lib/jquery/jquery-ui-1.14.1.custom/jquery-ui.min.js"></script>
+	<!-- tailwindcss -->
+	<link rel="stylesheet" href="./assets/css/output.css">
+	<!-- custom css -->
+	<link rel="stylesheet" href="./assets/css/custom.css">
+</head>
+
+
+<body>
+	<div class="container-2xl bg-gray-900 w-screen h-screen">
+		<header>
+			<h1 class="text-center text-2xl text-semibold text-amber-700">CREATE YOUR DREAM TEAM</h1>
+		</header>
+		<main class="mt-10">
+			<div class="flex justify-center">
+				<div class="option basis-1/2 flex flex-col gap-20 justify-between items-center">
+					<div id="option-list" class="bg-white p-8 flex flex-col gap-3">
+						<div class="draggable hover:cursor-move text-gray-900 bg-amber-300 px-5 py-2">Item 1</div>
+						<div class="draggable hover:cursor-move text-gray-900 bg-amber-300 px-5 py-2">Item 2</div>
+						<div class="draggable hover:cursor-move text-gray-900 bg-amber-300 px-5 py-2">Item 3</div>
+						<div class="draggable hover:cursor-move text-gray-900 bg-amber-300 px-5 py-2">Item 4</div>
+						<div class="draggable hover:cursor-move text-gray-900 bg-amber-300 px-5 py-2">Item 5</div>
+					</div>
+					<div class="option-tool flex gap-20">
+						<div class="tool-team">
+							<select class="bg-white px-5 py-3 uppercase" name="select-team" id="select-team">
+								<option value="" disabled selected>choose your team</option>
+								<option value="a">team A</option>
+								<option value="b">team B</option>
+								<option value="c">team C</option>
+								<option value="d">team D</option>
+
+							</select>
+						</div>
+						<div class="tool-lineup">
+							<select class="bg-white px-5 py-3 uppercase" name="select-lineup" id="select-lineup">
+								<option value="" disabled selected>choose your lineup</option>
+								<option value="3-4-3">3-4-3</option>
+								<option value="3-5-2">3-5-2</option>
+								<option value="4-3-3">4-3-3</option>
+								<option value="4-4-2">4-4-2</option>
+								<option value="4-2-4">5-3-2</option>
+								<option value="5-3-2">5-3-2</option>
+							</select>						
+						</div>
+					</div>
+				</div>
+
+
+				<div class="basis-1/2 flex flex-col items-center gap-4">
+					<div class="desc flex justify-between items-center  w-[350px] bg-gray-900">
+						<div class="desc-logo w-full h-full flex items-center justify-center gap-3 p-2 m-2 border-1 bg-white font-medium text-gray-900">
+							<span class="uppercase">team</span>
+							<span id="desc-logo-title" class="uppercase"></span>
+						</div>
+						<div class="desc-lineup w-full h-full flex items-center justify-center gap-3 p-2  m-2 border-1 bg-white font-medium text-gray-900">
+							<span class="uppercase">lineup:</span>
+							<span id="desc-lineup-number"></span>
+						</div>
+					</div>
+					<div class="bg-[url('../image/lineup.webp')] bg-cover bg-center w-[30vw] h-[75vh]">
+						<div class="grid grid-rows-4 w-full h-full gap-8">
+							<div id="FW" class="flex flex-row justify-between items-center">
+								<!-- FW content -->
+							</div>
+							<div id="MF" class="flex flex-row justify-between items-center">
+								<!-- MF content -->
+							</div>
+							<div id="DF" class="flex flex-row justify-between items-center">
+								<!-- DF content -->
+							</div>
+							<div id="GK" class="flex flex-row justify-center items-center">
+								<!-- GK content -->
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</main>
+		<!-- <footer>
+			footer
+		</footer> -->
+	</div>
+	<!-- main.js -->
+	<script src="./assets/js/main.js"></script>
+</body>
+
+</html>
